@@ -1,0 +1,17 @@
+html {
+}
+
+body { 
+  background-position: center;
+  /* transform: scale(.66); */
+  background-color: hsla(174, 100%, 50%, 0.3);
+  background-image: repeating-radial-gradient( hsla(194, 53%, 69%, 0.3) 0px, hsla(220,100%,60%,0) 60%), repeating-radial-gradient( hsla(330,100%,40%,0.3) 12%, hsla(174, 100%, 50%, 0.3) 24px);
+  animation: jelly 20s cubic-bezier(.1,.4,.9,.6) infinite;
+}
+
+@keyframes jelly {
+  from { background-size:  60px  60px,  24px  24px; }
+  50%  { background-size: 120px 120px, 100px 100px; }
+  to   { background-size:  60px  60px,  24px  24px; }
+  /* to   { background-size:  24px  24px, 140px 140px; } */
+}

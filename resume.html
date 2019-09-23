@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My resume!</title>
+    <style>
+      :root {
+        --indent-width: 30px;
+      }
+
+      body {
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+        font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+        font-size: 1.125em;
+      }
+
+      ul {
+        padding-left: var(--indent-left);
+      }
+
+      #name {
+        display: flex;
+        justify-content: center;
+      }
+
+      #contact {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      #education li {
+        margin-bottom: 15px;
+      }
+
+      #experience > ul > li {
+        margin-bottom: 15px;
+      }
+
+      .section-title {
+        font-weight: bold;
+      }
+
+      .section-list {
+        list-style: none;
+        padding-left: var(--indent-width);
+      }
+
+      .section-item {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        margin-bottom: 25px;
+      }
+
+      .entry-title {
+        font-weight: bold;
+        flex: 1 1 50%;
+        margin-bottom: 5px;
+      }
+
+      .entry-duration {
+        font-style: italic;
+        flex: 1 1 50%;
+      }
+
+      .entry-description {
+        padding-left: var(--indent-width);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="name">
+      <h2>Yev Barkalov</h2>
+    </div>
+    <div id="contact">
+      <span>yevbar1729@gmail.com</span>
+      <span>|</span>
+      <span>(415) 866-7579</span>
+      <span>|</span>
+      <span>GitHub: yevbar</span>
+      <span>|</span>
+      <span>LinkedIn: yevbar</span>
+    </div>
+    <div id="education">
+      <span class="section-title">Education</span>
+      <ul class="section-list">
+        <li class="section-item">
+          <span class="entry-title">Computer Science, Rochester Institute of Technology</span>
+          <span class="entry-duration">2019 - Present</span>
+          <span class="entry-description"></span>
+        </li>
+        <li class="section-item">
+          <span class="entry-title">Concurrent Enrollment, City College of San Francisco</span>
+          <span class="entry-duration">2017-2019</span>
+          <span class="entry-description">Relevant coursework includes: Computer Architecture with Assembly, Data Structures and Algorithms in Java, Discrete Mathematics</span>
+        </li>
+        <li class="section-item">
+          <span class="entry-title">Lowell High School</span>
+          <span class="entry-duration">2015-2019</span>
+          <span class="entry-description"></span>
+        </li>
+      </ul>
+    </div>
+    <div id="experience">
+      <span class="section-title">Experience</span>
+      <ul class="section-list">
+        <li class="section-item">
+          <span class="entry-title">Software Engineering Intern, LaunchDarkly</span>
+          <span class="entry-duration">March 2019 - Present</span>
+          <span class="entry-description">
+            <ul>
+              <li>Contributing to application (React.js + Redux) as well as backend (Golang)</li>
+              <li>Introduce APM integration for Datadog <a href="https://docs.datadoghq.com/integrations/launchdarkly/">https://docs.datadoghq.com/integrations/launchdarkly/</a></li>
+              <li>Create internal tools such as Confluence macros</li>
+            </ul>
+          </span>
+        </li>
+
+        <li class="section-item">
+          <span class="entry-title">Contributor, Open Source (Sourcegraph)</span>
+          <span class="entry-duration">November 2018 - March 2019</span>
+          <span class="entry-description">
+            <ul>
+              <li>Developed Chrome extensions for Sourcegraph</li>
+              <li>Used TypeScript and Sourcegraph API</li>
+              <li>Project worked on: Sourcegraph extension for LaunchDarkly, a feature flagging software</li>
+            </ul>
+          </span>
+        </li>
+
+        <li class="section-item">
+          <span class="entry-title">Software Engineer Intern, HiDimensional</span>
+          <span class="entry-duration">August 2018 - November 2018</span>
+          <span class="entry-description">
+            <ul>
+              <li>Full Stack development with a Python Flask Backend and React.js Frontend</li>
+              <li>Utilized the Ant Design UI library</li>
+              <li>Backend technologies used: PostgreSQL, SQLAlchemy, Heroku</li>
+            </ul>
+          </span>
+        </li>
+
+        <li class="section-item">
+          <span class="entry-title">Growth Engineer, Repl.it</span>
+          <span class="entry-duration">May 2018 - August 2018</span>
+          <span class="entry-description">
+            <ul>
+              <li>Organized both local and global meetups for Repl.it users</li>
+              <li>Travelled across country to give talks and workshops at high school hackathons</li>
+              <li>Engineered and helped hack new features</li>
+            </ul>
+          </span>
+        </li>
+
+        <li class="section-item">
+          <span class="entry-title">Lead Organizer, Hack the Fog</span>
+          <span class="entry-duration">October 2017 - March 2018</span>
+          <span class="entry-description">
+            <ul>
+              <li>Organized San Francisco's first high school hackathon and received recognition in the San Francisco Chronicle <a href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php">https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php</a></li>
+              <li>Coordinated sponsorships from several companies including Facebook, Google, and LinkedIn</li>
+              <li>Brought in an attendance of 75+ students</li>
+            </ul>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

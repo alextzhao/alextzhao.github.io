@@ -1,0 +1,22 @@
+body {
+  background-position: center;
+  /* transform: scale(.66); */
+  background-color: rgba(0, 255, 230, 0.3);
+  background-image: repeating-radial-gradient(rgba(134, 198, 218, 0.3) 0px, rgba(51, 119, 255, 0) 60%), repeating-radial-gradient(rgba(204, 0, 102, 0.3) 12%, rgba(0, 255, 230, 0.3) 24px);
+  animation: jelly 20s cubic-bezier(0.1, 0.4, 0.9, 0.6) infinite;
+}
+
+@keyframes jelly {
+  from {
+    background-size: 60px 60px, 24px 24px;
+  }
+  50% {
+    background-size: 120px 120px, 100px 100px;
+  }
+  to {
+    background-size: 60px 60px, 24px 24px;
+  }
+  /* to   { background-size:  24px  24px, 140px 140px; } */
+}
+
+/*# sourceMappingURL=styles.css.map */
